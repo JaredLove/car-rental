@@ -5,7 +5,7 @@ import React from "react";
 
 const Download = () => {
     return (
-        <section className="download">
+        <section className="d-flex flex-row justify-content-center align-items-center">
             <div>
                 <h2>Download Our App</h2>
                 <h1>Available for your iOS or Android device.</h1>

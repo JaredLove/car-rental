@@ -5,7 +5,7 @@ import React from "react";
 
 const Contact = () => {
     return (
-        <section className="contact">
+        <section className="d-flex flex-row justify-content-center align-items-center">
             <div>
                 <h2>Contact</h2>
                 <h1>Get in Touch</h1>
