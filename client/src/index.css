@@ -11,3 +11,17 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+.hero {
+  background-image: url("./assets/images/car2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 500px;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  border-radius: 10px;
+}

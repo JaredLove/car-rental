@@ -1,25 +1,27 @@
 import React from "react";
 
-import head from "../assets/images/hero-car.jpg"
-
-
 
 
 
 const Home = () => {
     return (
-        <div className="d-flex flex-row justify-content-center align-items-center">
+    <div className="hero">
+        <div className="d-flex flex-row justify-content-center align-items-center p-5">
             <div className="d-flex flex-column align-items-center">
-            <h1>High Quality For Cheap Prices.</h1>
-            <p className="col-lg-5 fs-2">
-                Always wanted to drive a luxury car but never had the money? Well now you can! We offer the best cars for the best prices.
+            <h2 className="text-dark fs-1">Plan Your Trip Now</h2>
+            <h1 className="text-light fs-1">Save With Ditto Car Rentals</h1>
+            <p className="col-lg-6 fs-3 text-light">
+            Rent the car of your dreams. Unbeatable prices, unlimited miles, flexible pick-up options and much more.
             </p>
-            <button className="btn btn-primary btn-sm text-center rounded-5" style={{padding:'15px', width:'200px'}}>Get Started</button>
+            <div className="d-flex flex-row align-items-center">
+            <button className="btn btn-sm text-center rounded-5 text-dark m-2 fs-5" style={{padding:'15px', width:'200px', backgroundColor:'orange'}}>Book A Ride</button>
+            <button className="btn btn-sm text-center rounded-5 text-light fs-5" style={{padding:'15px', width:'200px', border:'1px solid orange'}}>Learn More</button>
+            </div>
             </div>
             <div className="d-flex align-items-center">
-            <img src={head} alt="hero" className="rounded-5" style={{height:'500px', width:'500px'}}/>
             </div>
         </div>
+    </div>
     )
 }
 
