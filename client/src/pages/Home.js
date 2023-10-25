@@ -5,6 +5,7 @@ import React from "react";
 
 const Home = () => {
     return (
+<div style={{height:'80vh'}}>
     <div className="hero">
         <div className="d-flex flex-row justify-content-center align-items-center p-5">
             <div className="d-flex flex-column align-items-center">
@@ -22,6 +23,7 @@ const Home = () => {
             </div>
         </div>
     </div>
+</div>
     )
 }
 
