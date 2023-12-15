@@ -1,3 +1,11 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 25px;
+  color: #fff;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -13,15 +21,66 @@ code {
 }
 
 
-.hero {
-  background-image: url("./assets/images/car2.jpg");
+.wrapper {
+  background-image: url("./assets/images/car-tesla-x.png");
   background-size: cover;
-  background-position: center;
+  background-position: center 70%;
   background-repeat: no-repeat;
-  height: 500px;
-  width: 70%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 20px;
-  border-radius: 10px;
+  height: 100vh;
+  width: 100%;
+}
+
+.hero {
+  height: 10px;
+}
+
+
+.home-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  color: #fff;
+}
+
+.home-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home-bottom-buttons {
+  margin: 1rem 0;
+}
+
+.home-bottom-buttons button {
+  padding: 0 50px;
+  width: 300px;
+  margin: 0 20px;
+  background-color: rgba(208, 209, 211, 1);
+  border: none;
+  border-radius: 5px;
+  color: black;
+}
+
+#b-b{
+  background-color: rgba(47, 47, 48, 1);
+  color: #fff;
+}
+
+.home-bottom-p p {
+  font-size: .7rem;
+}
+.home-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  bottom: 2rem;
+
+}
+
+#see{
+  font-size: inherit;
+  text-decoration: underline;
 }

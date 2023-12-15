@@ -12,8 +12,10 @@ import Contact from './components/Contact';
 function App() {
   return (
     <>
+    <div className='wrapper'>
     <Nav />
     <Home />
+    </div>
     <About />
     <Choose />
     <Cars />

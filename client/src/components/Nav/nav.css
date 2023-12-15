@@ -1,0 +1,125 @@
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+}
+
+.main-navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+}
+
+.main-navigation li {
+    display: inline-block;
+    padding: 0 1rem;
+}
+.main-navigation a {
+    text-decoration: none;
+    color: #fff;   
+     border-radius: 5px; 
+    padding: 0.5rem;
+    transition: background-color 200ms ease-in;
+}
+
+.main-navigation a:hover {
+    background-color: gray;
+    color: black;
+    transition: color 200ms ease-in;
+
+
+}
+
+.menu-button-toggle {
+    display: none;
+}
+.icon-mobile {
+    display: none;
+}
+
+.icon-logo-mobile {
+    display: none;
+}
+
+.sr-only {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: none;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+    nav {
+        margin: 0;
+        padding: 0;
+    }
+    .menu-button-toggle {
+        display: block;
+        position: absolute;
+        z-index: 9999;
+        width: 1rem;
+        aspect-ratio: 1;
+        top: 1.6rem;
+        right: 2rem;
+        background: none;
+        color: #fff;
+        border: none;
+      }
+
+
+
+    .main-navigation {
+        flex-direction: column;
+        position: fixed;
+        inset: 0 0 0 0;
+        height: 100%;
+        width: 100vw;
+        background-color: #fff;
+        padding: min(5vh, 8rem) 2em;
+        margin: 0;
+        transform: translatex(-100%);
+        transition: transform 550ms ease-out;
+        
+        z-index: 1000;
+          }
+
+    .main-navigation  li {
+        text-align: left;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .main-navigation-open{
+        transform: translatex(0%);
+    }
+
+    .icon-mobile {
+        display: block;
+        position: relative;
+        bottom: 1.9rem;
+        left: 18rem;
+        color: #fff;
+      }
+      .icon-logo-mobile {
+        display: block;
+    }
+}
+
+
+
