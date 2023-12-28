@@ -27,24 +27,24 @@ const Nav = () => {
             </button>
             <nav>
 
-                <ul id="main-navigation" className={`main-navigation ${isOpen ? "main-navigation-open" : "main-navigation-closed"}`} >
+                <ul id="main-navigation" className={`main-navigation ${isOpen ? "main-navigation-open" : "main-navigation"}`} >
                     <div className="icon-logo-mobile">
                         <h4>Logo</h4>
                     </div>
                     <li>
-                       <a href="/">Home<span className="icon-mobile">&#62;</span></a> 
+                       <a href="/">Home</a> 
                     </li>
                     <li>
-                    <a href="/">About<span  className="icon-mobile">&#62;</span></a> 
+                    <a href="/">About</a> 
                     </li>
                     <li>
-                    <a href="/">Vehicles<span  className="icon-mobile">&#62;</span></a> 
+                    <a href="/">Vehicles</a> 
                     </li>
                     <li>
-                    <a href="/">Discover<span  className="icon-mobile">&#62;</span></a> 
+                    <a href="/">Discover</a> 
                     </li>
                     <li>
-                    <a href="/">Shop<span  className="icon-mobile">&#62;</span></a> 
+                    <a href="/">Shop</a> 
                     </li>
                 </ul>
             </nav>

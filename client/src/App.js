@@ -16,13 +16,13 @@ function App() {
     <Nav />
     <Home />
     </div>
-    <About />
-    <Choose />
+    {/* <About /> */}
+    {/* <Choose />
     <Cars />
     <Testimonials />
     <FAQ />
     <Download />
-    <Contact />
+    <Contact /> */}
     </>
   );
 }

@@ -5,6 +5,7 @@ header {
     align-items: center;
     width: 100%;
     height: 100px;
+    position: fixed;
 }
 
 .main-navigation {
@@ -73,7 +74,7 @@ header {
         z-index: 9999;
         width: 1rem;
         aspect-ratio: 1;
-        top: 1.6rem;
+        top: .7rem;
         right: 2rem;
         background: none;
         color: #fff;
@@ -88,7 +89,7 @@ header {
         inset: 0 0 0 0;
         height: 100%;
         width: 100vw;
-        background-color: #fff;
+        background-color: #0c0c0c;
         padding: min(5vh, 8rem) 2em;
         margin: 0;
         transform: translatex(-100%);
@@ -103,6 +104,20 @@ header {
         margin: 0;
         width: 100%;
         border-bottom: 1px solid #ccc;
+        display: flex;
+        
+    }
+
+    .main-navigation li a {
+        width: 100%;
+        padding: 1rem 0;
+        text-align: center;
+        display: block;
+        border: none;
+        border-radius: 0;
+        color: #fff;
+        background-color: #0c0c0c;
+        transition: background-color 200ms ease-in;
     }
 
     .main-navigation-open{
@@ -111,13 +126,14 @@ header {
 
     .icon-mobile {
         display: block;
-        position: relative;
-        bottom: 1.9rem;
-        left: 18rem;
+        position: absolute;
+        right: 100px;
         color: #fff;
       }
       .icon-logo-mobile {
         display: block;
+        position: relative;
+        bottom: 1.4rem;
     }
 }
 
